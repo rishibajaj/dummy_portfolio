@@ -20,7 +20,7 @@ A website to showcase the projects I have developed to potential employers. The 
 
 Here is a screenshot of the deployed application:
 
-![Screenshot of Rishi Bajaj's Portfolio Website](./assests/02-portfolio.jpg)
+![Screenshot of Rishi Bajaj's Portfolio Website](./assests/02-portfolio.png)
 
 ## License
 
