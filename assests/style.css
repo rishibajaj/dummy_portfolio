@@ -1,0 +1,310 @@
+/*Color Theme*/
+:root {
+    --blue: hsl(17, 41%, 97%);
+    /* --pink: rgba(255, 255, 255, 0.747); */
+    --forestgreen: rgba(0, 0, 0, 0.651);
+}
+
+/*Set root font size to 10px*/
+html {
+    font-size: 62.5%;
+}
+
+/*General Styles*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--forestgreen);
+    margin: 0;
+}
+
+/*Header and Navigation Bar*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 15px 30px 15px 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+    background-color: var(--pink);
+    color: var(--forestgreen);
+    font-size: 4rem;
+    padding: 15px 20px 15px 100px;
+    margin: 0;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation a {
+    color: var(--forestgreen);
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--forestgreen);
+    padding: 5px 5px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+/*Hover over nav items so background turns from green to pink and font change from pink to green*/
+#navigation a:hover {
+    background-color: var(--forestgreen);
+    color: var(--blue);
+    transition: all 0.1s ease-out;
+}
+
+/*hero banner*/
+#hero {
+    background-image: url(02-hero-bg.png);
+    height: 200px;
+    background-size: cover;
+    background-position: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 5% 0 0;
+    /* text-align: left; */
+}
+
+#hero h2 {
+    /* background-color: var(--forestgreen); */
+    color: var(--forestgreen);
+    font-size: 5rem;
+    height: 3rem;
+    padding: 10px;
+    text-align: left;
+}
+
+/*general styles for main section*/
+.sectionHeading {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 2% 0 10%;
+    width: 200px;
+}
+
+.contentSection {
+    padding: 10px 50px 10px 10px;
+    margin: 10px;
+    border-left: 1px solid var(--forestgreen);
+    width: 75%;
+}
+
+/*About Me Section*/
+#aboutMeInfo {
+    font-size: 1.5rem;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Work Section*/
+#Work {
+    display: flex;
+    flex-direction: row;
+}
+
+#heroGrid {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "Project1 Project1"
+        "Project1 Project1"
+        "Project2 Project3"
+        "Project4 Project5"
+}
+
+#Project1 {
+    grid-area: Project1;
+    background-image: url(02-portfolio-1.png);
+}
+
+#Project2 {
+    grid-area: Project2;
+    background-image: url(02-portfolio-2.png);
+}
+
+#Project3 {
+    grid-area: Project3;
+    background-image: url(02-portfolio-3.png);
+}
+
+#Project4 {
+    grid-area: Project4;
+    background-image: url(02-portfolio-4.png);
+}
+
+#Project5 {
+    grid-area: Project5;
+    background-image: url(02-run-buddy.png);
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 5px;
+    border: 1px solid var(--forestgreen);
+/*Hover over grid items so cursor changes to grab icon*/
+    cursor: grab;
+}--blue: hsl(17, 41%, 97%);
+
+/*Hover over grid items so border disappears*/
+.heroGridArea:hover {
+    border: none;
+}
+
+.workHeading {
+    font-size: 1.5rem;
+    color: var(--blue);
+    background-color: var(--pink);
+    padding: 10px 10px 10px 5px;
+}
+
+.workHeading a {
+    font-size: 1.5rem;
+    color: var(--blue);
+    background-color: var(--pink);
+    padding: 10px 10px 10px 5px;
+    text-decoration: none;
+}
+
+/*Contact Me Section*/
+#contactMe {
+    display: flex;
+    flex-direction: row;
+}
+
+#contactSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+}
+
+#contactSection p {
+    border-bottom: 1px solid var(--forestgreen);
+    padding: 10px;
+}
+
+/*Hover over contact items so background turns from green to pink and font change from pink to green*/
+#contactSection p:hover {
+    background-color: var(--forestgreen);
+    color: var(--blue);
+    transition: all 0.1s ease-out;
+}
+
+.contactDetails a {
+    text-decoration: none;
+    color: var(--forestgreen);
+}
+
+.contactDetails a:hover {
+    /* background-color: var(--forestgreen); */
+    color: var(--blue);
+    transition: all 0.1s ease-out;
+}
+
+/*Resume Section*/
+#Resume {
+    display: flex;
+    flex-direction: row;
+}
+
+#resumeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+}
+
+#resumeSection a {
+    border-bottom: 1px solid var(--forestgreen);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--forestgreen);
+}
+
+/*Hover over resume link so background turns from green to pink and font change from pink to green*/
+#resumeSection a:hover {
+    background-color: var(--forestgreen);
+    color: var(--blue);
+    transition: all 0.2s ease-out;
+}
+
+/*At screen size under 1000px, removes nav items and changes display of Work and Contact Me sections*/
+@media only screen and (max-width: 1000px) {
+    #navigation {
+        display: none;
+    }
+    #heroGrid {
+        display: grid;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "Project1"
+            "Project1"
+            "Project2"
+            "Project3"
+            "Project4"
+            "Project5"
+    }
+    #contactSection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*At screen size under 800px, changes display of main section*/
+@media only screen and (max-width: 800px) {
+
+    .sectionHeading {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .workHeading {
+        line-height: 2;
+    }
+
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #Work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contactMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #Resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
