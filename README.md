@@ -12,7 +12,7 @@ The site should meet the following criteria:
     * When images of the applications are clicked then the user is taken to that deployed application
     * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
-The deployed application can be found at https://rishibajaj.github.io/dummy_portfolio
+The deployed application can be found at https://github.com/rishibajaj/dummy_portfolio
 
 ## Usage
 
